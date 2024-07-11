@@ -1,1 +1,17 @@
 *node_modules
+# Ignore compiled binaries and executables
+/target/
+
+# Ignore Cargo.lock file
+Cargo.lock
+
+# Ignore generated documentation
+/doc/
+
+# Ignore IDE or editor-specific files
+.vscode/
+.idea/
+
+# Ignore system and temporary files
+*.swp
+*~
