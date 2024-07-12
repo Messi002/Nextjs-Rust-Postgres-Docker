@@ -1,7 +1,8 @@
-create the compose.yaml file
+create the compose.yaml file version 3.9
 
 then 
-- docker compose up -d if 
+- docker compose up -d
+ if 
 and error occurs 
 - docker compose down
 
@@ -13,3 +14,30 @@ to check all containers and shut down unwanted ones using
 
 To check if everything is alright and to be inside the container:
  docker exec -it db psql -U postgres
+
+after writing up the container we build it up
+- docker compose build 
+now to spin the container containing the rust app 
+- docker compose up -d rustapp
+
+after setting up the spinning up the rustapp container
+http://localhost:8080/api/rust/users
+
+
+
+
+Working now with the frontend
+
+in the next.config.js set output : standalone
+create this files:
+touch .dockerignore next.dockerfile
+
+in the dockerignore put **/node_modules
+paste infos for next.dockerfile
+
+format compose.yaml
+
+
+docker compose build
+
+docker compose up -d (no need to specify all the services, because that will spin up all the services)
