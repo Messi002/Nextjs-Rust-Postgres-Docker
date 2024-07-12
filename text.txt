@@ -12,7 +12,7 @@ to check all containers and shut down unwanted ones using
 - docker stop elastic_perlman
 - docker rm elastic_perlman
 
-To check if everything is alright and to be inside the container:
+To check if everything is alright with the database and to be inside the container:
  docker exec -it db psql -U postgres
 
 after writing up the container we build it up

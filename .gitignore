@@ -1,6 +1,9 @@
 # Ignore node_modules in frontend folder
 /frontend/node_modules/
 
+# Ignore target folder in backend
+/backend/target/
+
 # Ignore compiled binaries and executables
 /target/
 
