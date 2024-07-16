@@ -1,6 +1,10 @@
 create the compose.yaml file version 3.9
 
-
+then 
+- docker compose up -d
+ if 
+and error occurs 
+- docker compose down
 
 run 
 - docker ps -a 
